@@ -114,7 +114,7 @@ if ( !is.R())
     }
  }
 if ( is.R())
- {if (version$major >= 1 && version$minor > 6.2)
+ {if (as.numeric(version$major)+0.1*as.numeric(version$minor) > 1.62 )
   {if (1e-14 < max(abs(runif(5)-test.valueU)))
     {warning("The default runif number generator has been changed.")
      ok <- FALSE
@@ -140,7 +140,7 @@ if ( is.R())
 #   old version was named "Buggy Kinderman-Ramage"
   setRNG(kind="Marsaglia-Multicarr", seed=test.seed, normal.kind="Kinderman-Ramage")
 
-if (version$major >= 1 && version$minor >= 7.1)
+if (as.numeric(version$major)+0.1*as.numeric(version$minor) >= 1.71 )
   {if (1e-14  < max(abs(rnorm(5) -  test.valueN.R1.7.1  )))
     {warning("The Kinderman-Ramage rnorm number generator has been changed.")
      ok <- FALSE}
