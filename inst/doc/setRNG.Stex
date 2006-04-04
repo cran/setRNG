@@ -15,6 +15,13 @@ In R, the functions in this package are made available with
 library("setRNG") 
 \end{Scode}
 
+As of R-2.1.0 the code from the vignette that generates this guide can 
+be loaded into an editor with \emph{edit(vignette("setRNG"))}.
+This uses the default editor, which can be changed using \emph{options()}.
+Also, it should be possible to view the pdf version of the guide for this 
+package with \emph{print(vignette("setRNG"))}.
+
+
 This library provides tools to simplify recording and resetting the random 
 number generator, to help make monte carlo experiments easily reproducible. 
 It uses the R/S tools for setting the seed, but also records and sets

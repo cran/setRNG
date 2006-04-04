@@ -1,5 +1,9 @@
-\name{00Intro.setRNG}
-\alias{00Intro.setRNG}
+\name{setRNG-package}
+\alias{setRNG-package}
+\alias{setRNG.Intro}
+
+\docType{package}
+
 \title{setRNG}
 
 \section{Usage}{
@@ -38,7 +42,6 @@ theoretical reasons.
   
 
 \examples{
-is.R()
 setRNG(kind="Wichmann-Hill", seed=c(979,1479,1542), normal.kind="Box-Muller")
 rnorm(10)
 

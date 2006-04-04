@@ -18,7 +18,7 @@
     original value.) If no arguments are given the current setting is 
     returned. In R see RNGkind for more details.
 }
-\sideffects{Sets global variables controlling the uniform and normal random 
+\section{Side Effects}{Sets global variables controlling the uniform and normal random 
     number generators and the global seed.}
 \seealso{
     \code{\link{RNGkind}},

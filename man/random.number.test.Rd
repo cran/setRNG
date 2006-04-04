@@ -16,7 +16,7 @@
     complicated problems that may be a result of other "improvements" in your
     simulation or estimation programs.
 }
-\sideffects{Executes \code{stop()} if the tests fail.}
+\section{Side Effects}{Executes \code{stop()} if the tests fail.}
 \seealso{
     \code{\link{set.seed}}
     \code{\link{RNGkind}}
