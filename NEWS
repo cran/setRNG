@@ -1,3 +1,11 @@
+                CHANGES IN setRNG 2008.3-1
+
+Changes (Possibly) Affecting Users
+
+    o  as.integer(seed) used explicitely to avoid warning caused when an integer
+       stored as a double was used to set the seed. This should cause no changes
+       other than eliminating the warning message.
+       
                 CHANGES IN setRNG 2006.4-1
 
 Changes (Possibly) Affecting Users

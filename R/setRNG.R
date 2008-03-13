@@ -34,10 +34,14 @@ setRNG <- function(kind=NULL, seed=NULL, normal.kind=NULL)
        #if (is.null(v)) warning("version cannot be verified.")
        #if (!all(unlist(RNGversion()) == unlist(v)))
        # warning("rng used but version does not correspond to original. Differences may occur.")
+	k <- get(".Random.seed", envir=.GlobalEnv, inherits = FALSE)[1]
 	remove(".Random.seed", envir=.GlobalEnv) # otherwise RNGkind complains
-	RNGkind(kind=kind, normal.kind=normal.kind)
+	RNGkind(kind=kind, normal.kind=normal.kind) # this sets .Random.seed
+	seed <- as.integer(seed) #fix case where an integer is stored as double
 	if ( 1==length(seed)) set.seed(seed) 
-        else assign(".Random.seed", c(.Random.seed[1], seed), envir=.GlobalEnv)
+        else assign(".Random.seed", 
+	    c(get(".Random.seed", envir=.GlobalEnv, inherits = FALSE)[1], seed), 
+	    envir=.GlobalEnv)
 	old
       }
 
@@ -88,7 +92,7 @@ random.number.test <- function()
             -0.7439218830522146, -0.9861002105572579, -0.3542773118879623)
      }
   if (!is.R()) 
-     {# above should really be if (is.Splus()) but then tests require syskern
+     {# above should really be if (is.Splus()) 
       test.seed<- c(37, 39, 39, 4, 7, 2, 27, 58, 38, 15, 32, 2)
       test.valueU.S <- c(0.4299328043125570, 0.3092006836086512,
             0.5808096211403608, 0.3061958812177181, 0.8137333435006440)
