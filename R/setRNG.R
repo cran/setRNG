@@ -42,7 +42,7 @@ setRNG <- function(kind=NULL, seed=NULL, normal.kind=NULL)
         else assign(".Random.seed", 
 	    c(get(".Random.seed", envir=.GlobalEnv, inherits = FALSE)[1], seed), 
 	    envir=.GlobalEnv)
-	old
+	invisible(old)
       }
 
 

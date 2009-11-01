@@ -1,25 +1,26 @@
-                CHANGES IN setRNG 2008.3-1
+Changes in setRNG version 2009.11-1
 
-Changes (Possibly) Affecting Users
+   o	setRNG sources migrated to distr project on R-forge.
 
-    o  as.integer(seed) used explicitely to avoid warning caused when an integer
-       stored as a double was used to set the seed. This should cause no changes
-       other than eliminating the warning message.
+   o	Standardized NEWS format for new function news().
+
+   o	The result of setRNG is now returned with invisible() except in the case
+	it is called with no arguments. This avoids printout of large seeds.  
+
+Changes in setRNG version 2008.3-1
+
+   o	as.integer(seed) used explicitely to avoid warning caused when an 
+	integer stored as a double was used to set the seed. This should 
+	cause no changes other than eliminating the warning message.
        
-                CHANGES IN setRNG 2006.4-1
+Changes in setRNG version 2006.4-1
 
-Changes (Possibly) Affecting Users
+   o	added setRNG-package.Rd overview.  
 
-    o  added setRNG-package.Rd overview.  
-
-    o  added namespaces  
+   o	added namespaces  
  
-                CHANGES IN setRNG 2004.4-1
+Changes in setRNG version 2004.4-1
  
-Changes (Possibly) Affecting Users
- 
-    o   setRNG is now maintained as a separate package
+   o	setRNG is now maintained as a separate package
 
-
-
-Older NEWS is in the dse bundle NEWS file.
+   o	Older NEWS is in the dse NEWS file.

@@ -28,8 +28,8 @@ Get the random number generator and seed used to generate an object.
 }
 \examples{
 \dontrun{
-if (require("dse1")) {
-  data("eg1.DSE.data.diff", package="dse1")
+if (require("dse")) {
+  data("eg1.DSE.data.diff", package="dse")
   model <- estVARXls(eg1.DSE.data.diff)
   sim <- simulate(model)
   getRNG(sim)

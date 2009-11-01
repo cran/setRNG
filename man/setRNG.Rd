@@ -13,10 +13,16 @@
 \value{The old setting.}
 \details{
     Sets the uniform and normal random number generators and the seed.
-    The old setting is returned in a format
-    which can be used in another call to setRNG. (This would reset to the
-    original value.) If no arguments are given the current setting is 
-    returned. In R see RNGkind for more details.
+    The old setting is returned using \code{invisible()} in a format
+    which can be used in another call to \code{setRNG}. (This would reset to the
+    original value.) If no arguments are given the current setting is returned, 
+    not using \code{invisible()}. In R see \code{RNGkind} for more details.
+
+    Note that in a function using \code{setRNG} it is good practice to
+    assign the old setting to a variable, then reset to the old value on exiting
+    the function (using \code{on.exit}). This avoids the possibility that
+    overall RNG behaviour in a session, other than within your function, may be 
+    disrupted by your function.
 }
 \section{Side Effects}{Sets global variables controlling the uniform and normal random 
     number generators and the global seed.}
