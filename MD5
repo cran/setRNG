@@ -1,0 +1,15 @@
+940673f0977f0934cc3b0e490fdc4179 *DESCRIPTION
+8c2ef3f2ed55a520caa10c020749612d *LICENSE
+bef2dd25dd2c3804fa6395e07a1b88d9 *NAMESPACE
+9662761d22c1ab0625cf8727b03268ba *NEWS
+3acf4e5781de2a2feac277777c8375df *R/setRNG.R
+9188a9a6a92ea94f352685aecc9c7ea9 *S/setRNG.S
+b15575f710c9c1eacef389b5fe02f901 *inst/doc/setRNG.Stex
+8e893cc74735750f2edf32f8cf591081 *inst/doc/setRNG.pdf
+7ceb115a50ae35d97c1f3fd54aaf607f *man/00.setRNG.Intro.Rd
+0b540b496cfaf76034bb3c5b30397116 *man/getRNG.Rd
+2270b6def5b8129231a7b354e06e8790 *man/random.number.test.Rd
+1f5453bbda78703c41f2a7e06c584d55 *man/setRNG-package.Rd
+766fd7f4ee154013d53d8d2b7163e708 *man/setRNG.Rd
+7cbbba2105812c2eb90c6e1d2381f34c *tests/RNGtest.R
+b15575f710c9c1eacef389b5fe02f901 *vignettes/setRNG.Stex
