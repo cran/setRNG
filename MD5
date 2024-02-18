@@ -1,12 +1,12 @@
-d38f7335289737df5fc0a9cc156dff60 *DESCRIPTION
+ed226f4320bffa7be5b22a33091d895c *DESCRIPTION
 379421fb2f4cf08f4ce2b8ce885c6144 *LICENSE
 280be15c1b1b6b48984b37241ad690c1 *NAMESPACE
-37fcd10ca5488e02ef814ddbaa846f0d *NEWS
-6cab7834b0870a95a6834d2499c174e1 *R/setRNG.R
-365b97f7cdc43af58e8015ece9e04ae7 *build/vignette.rds
+e447419d1d24dacaafe14db68faad955 *NEWS
+2c2a08848a3c5d68bb036f56e949c78f *R/setRNG.R
+0c8fef3b03574e02d1b728ae839dd911 *build/vignette.rds
 d0a3f6559d50aa275ca13ba6bd5c0d6e *inst/doc/setRNG.R
 18abae00a88113e01e84fd51918f4793 *inst/doc/setRNG.Stex
-22e3d92a8572aa23d3541947aa1fe068 *inst/doc/setRNG.pdf
+ae400bba509f78c1690eae2d42139a16 *inst/doc/setRNG.pdf
 d4736bf0587ecb31ff233e80ed26f006 *man/00.setRNG.Intro.Rd
 442bd1e250b8a07510caa42387737f93 *man/getRNG.Rd
 181ac5da8ab09060b32e2e608dbe89bd *man/random.number.test.Rd
